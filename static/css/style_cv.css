@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+    color: #343b3f;
+    background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1612756441_200-p-fon-goluboi-strogii-222.png');
+    background-size: 100%;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: royalblue;
+}
+
+a:visited {
+    color: rgb(53, 53, 53);
+}
+
+.avatar {
+    width: 190px;
+    border-radius: 18px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: #24282b;
+    margin: 0px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.bg-red {
+    background: #fde2db;
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0px 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table th {
+    padding-bottom: 10px;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2), .table td:nth-child(3) {
+    color: #86898f;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0px;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #1a1d1f;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 10px 16px 10px;
+    outline: none;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group {
+    width: 50%;
+}
+
+.row > .form-group:first-child {
+    margin-right: 20px;
+}
+
+.btn {
+    background: #b3ecfd;
+    padding: 15px 20px;
+    color: #000;
+    border: none;
+    margin-top: 5px;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px #323a3d;
+    transition: background-color 0.5s ease 0s;
+    position: relative;
+    top: 0px;
+}
+
+.btn:hover {
+    background-color: #79e0ff;
+}
+
+.btn:active {
+    top: 2px;
+    box-shadow: 0px 1px 0px #323a3d;
+}

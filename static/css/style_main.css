@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    max-width: 1024px;
+    margin: auto;
+    background-image: url('https://divisare-res.cloudinary.com/images/f_auto,q_auto,w_auto/v1540391366/bepxj3aaq2klwlgytstr/studio11-dmitrii-tsyrenshchikov-stark-games-offices.jpg');
+    background-size: 100%;
+}
+.title_main {
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.block {
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.blocks {
+    margin-top: 5px;
+    display: flex;
+}
+
+@media (max-width: 1054px) {
+    body {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .blocks {
+        display: grid;
+    }
+}
+
+.blocks :first-child {
+    margin-right: 24px;
+}
+
+.mars {
+    margin: 15px 0;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 500px;
+    height: 200px;
+    background-image: url('https://bgr.com/wp-content/uploads/2021/04/bgrpic-copy-2.jpg?quality=82&amp;strip=all');
+    background-size: 100%;
+}
+
+.mars a {
+    padding: 5px 0 0 8px;
+    font-size: 20px;
+    display: block;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.cv {
+    margin: 15px 0;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 500px;
+    height: 200px;
+    background-image: url('https://g.foolcdn.com/editorial/images/465909/resume.jpg');
+    background-size: 100%;
+}
+
+.cv a {
+    padding: 5px 0 0 8px;
+    font-size: 20px;
+    display: block;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
