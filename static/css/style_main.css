@@ -12,6 +12,7 @@ body {
     background-image: url('https://divisare-res.cloudinary.com/images/c_limit,f_auto,h_2000,q_auto,w_3000/v1540391366/bepxj3aaq2klwlgytstr/studio11-dmitrii-tsyrenshchikov-stark-games-offices.jpg');
     background-size: 100%;
 }
+
 .title_main {
     padding-left: 10px;
     font-size: 30px;
@@ -32,7 +33,7 @@ body {
 }
 
 .mars {
-    margin: 15px 0;
+    margin-top: 15px;
     padding: 10px;
     margin-right: 24px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -53,7 +54,7 @@ body {
 }
 
 .cv {
-    margin: 15px 0;
+    margin-top: 15px;
     padding: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     background-color: #fff;
@@ -72,11 +73,56 @@ body {
     text-decoration: none;
 }
 
+.passwgen {
+    margin-top: 15px;
+    padding: 10px;
+    margin-right: 24px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 500px;
+    height: 200px;
+    background-image: url('https://wylsa.com/wp-content/uploads/2019/04/siber.jpg');
+    background-size: 100%;
+}
+
+.passwgen a {
+    padding: 5px 0 0 8px;
+    font-size: 20px;
+    display: block;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.plug {
+    margin-top: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 500px;
+    height: 200px;
+    background-image: url('http://ozero-tagarskoe.ru/wp-content/uploads/2022/05/razrabotka.png');
+    background-size: 100%;
+}
+
+.plug a {
+    padding: 5px 0 0 8px;
+    font-size: 20px;
+
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
 .mars:hover {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
 .cv:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.passwgen:hover {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
@@ -94,16 +140,33 @@ body {
 
     .mars {
         width:100%;
-        max-width: 600px;
+        max-width: none;
+        margin-bottom: 20px;
     }
 
     .cv {
         width:100%;
-        max-width: 600px;
+        max-width: none;
+        margin-top: 0px;
+    }
+
+    .passwgen {
+        width:100%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+
+    .plug {
+        width:100%;
+        max-width: none;
         margin-top: 0px;
     }
 
     .blocks {
-        margin-right: 20px;
+        margin-right: 20px; 
     }
+}
+
+.bottom {
+    height: 100px;
 }
