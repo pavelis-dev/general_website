@@ -54,6 +54,7 @@ a:visited {
 
 .avatar {
     width: 190px;
+    height: 253px;
     border-radius: 18px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -102,11 +103,18 @@ h1 {
 
 .bg-yellow {
     background-image: url('https://derelik.club/uploads/posts/2021-11/thumbs/1636946623_25-derelik-club-p-fon-vintazh-25.jpg');
-    background-size: 100%;
+
 }
 
 .bg-green {
     background-image: url('https://img2.goodfon.ru/original/1680x1050/6/6b/bumaga-myataya-fon.jpg');
+    height: 30px;
+    transition: height 0.3s ease 0s;
+    overflow: hidden;
+}
+
+.bg-green:hover {
+    height: 400px;
 }
 
 .bg-red {
