@@ -1,11 +1,16 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 import requests
 import json
-
 import random
 from password_generator import password
+from send_mail import send_email
+from setting import secret_key, my_mail, password_mail
+import smtplib
+from email.mime.text import MIMEText
+
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = secret_key
 
 
 # главная страница
@@ -40,8 +45,17 @@ def mars_photos():
 
 
 # моё резюме
-@app.route("/cv")
+@app.route("/cv", methods=['POST','GET'])
 def cv_func():
+    if request.method == 'POST':
+        flag_mail = send_email(request.form.get('name'), request.form.get('email'), request.form.get('message'))
+        if flag_mail == 'ok':
+            flash('Сообщение отправлено', category='success')
+            return render_template('cv.html')
+        else:
+            flash('Сообщение не отправлено, проверьте корректность вводимых данных', category='error')
+            return render_template('cv.html')
+
     return render_template('cv.html')
 
 
