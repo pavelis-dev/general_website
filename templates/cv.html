@@ -7,12 +7,18 @@
     </head>
     <body>
         <div class="container">
+            <div class="block_cv">
+                <a href="/">Назад на главную</a>
+            </div>
+            {% for cat, msg in get_flashed_messages(True) %}
+                <div class="flash {{cat}}">{{ msg }}</div>
+            {% endfor %}
             <div class="info">
                 <img class="avatar" src="https://sun9-87.userapi.com/impg/XioCUa5XvDMzfhD4nYsOZ54jvHWY1hVK4IXM5A/gNmAtm3fgHM.jpg?size=810x1080&quality=95&sign=80ea059e4aa4258916560bb222103aed&type=album" alt="здесь моё фото"/>
                 <div class="info-text">
                     <h1>Исайков Павел</h1>
-                    <p>Я начинающий программист и делаю этот <strong>сайт для практики</strong></p>
-                    <p>Я люблю писать музыку, играть в видеоигры и программировать</p>
+                    <p class="first_p">Я начинающий программист и делаю этот сайт для практики</p>
+                    <p class="second_p">Я люблю писать музыку, играть в видеоигры и программировать</p>
 
                     <h4>Мои социальные сети</h4>
 
@@ -108,7 +114,7 @@
 
             <div class="contact">
                 <h2>Написать мне</h2>
-                <form action="/" method="post">
+                <form action="/cv" method="POST">
                     <div class="row">
                         <div class="form-group">
                             <label for="name">Ваше имя: </label>
@@ -124,7 +130,7 @@
                     <div class="form-group">
                         <label for="text">Ваше сообщение: </label>
 
-                        <textarea name="message" id="text" cols="30" rows="5"></textarea>
+                        <textarea name="message" id="text" cols="30" rows="5" required></textarea>
                     </div>
 
                     <input class="btn" type="submit" value="Отправить">
