@@ -12,14 +12,14 @@
     <h1>Генератор паролей</h1>
     <div class="block_gen">
         <form action="#" method="get">
-            <p class="menu_title_gen">Укажите параметны генерируемого пароля:</p>
+            <p class="menu_title_gen">Укажите параметры генерируемого пароля:</p>
             <p><input type="checkbox" name="a" value="1" checked> Включить цифры</p>
-            <p><input type="checkbox" name="b" value="1" checked> Включить прописные буквы</p>
-            <p><input type="checkbox" name="c" value="1" checked> Включить строчные буквы</p>
+            <p><input type="checkbox" name="b" value="1" checked> Включить строчные буквы</p>
+            <p><input type="checkbox" name="c" value="1" checked> Включить прописные буквы</p>
             <p><input type="checkbox" name="d" value="1"> Включить символы</p>
             <p><input type="checkbox" name="e" value="1"> Исключать неоднозначные символы il1Lo0O</p>
-            <p><input class="input_gen1" maxlength="2" size="2" name="length" value="8" required> Укажите длинну пароля, количество символов (не менее 8)</p>
-            <p><input class="input_gen2" maxlength="1" size="2" name="count_password" value="1" required> Сколько паролей сгенерировать (не менее 1)</p>
+            <p><input class="input_gen1" type="number" size="3" name="length" min="8" max="99" value="8" required> Укажите длинну пароля, количество символов</p>
+            <p><input class="input_gen2" type="number" size="3" name="count_password" min="1" max="9" value="1" required> Сколько паролей сгенерировать</p>
             <p><button type="submit" class="btn_gen" name="btn-gen" value="сгенерировать">сгенерировать</p>
         </form>
     </div>
