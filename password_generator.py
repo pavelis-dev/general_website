@@ -29,6 +29,9 @@ def password(a, b, c, d, e, length, count_password):
             chars = chars.replace(c, '')
 
     for _ in range(int(count_password)):
-        lst_passw.append(generate_password(length, chars))
+        if chars == '':
+            lst_passw.append('Необходимо указать один из параметров!')
+        else:
+            lst_passw.append(generate_password(length, chars))
 
     return lst_passw
